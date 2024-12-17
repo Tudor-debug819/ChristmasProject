@@ -1,0 +1,11 @@
+<div class="controls">
+    <label for="particleSlider">Select number of snowflakes: </label>
+    <input
+  id="particleSlider"
+  type="range"
+  min="10"
+  max="200"
+  [value]="particles"
+  (input)="onParticleChange($event)">
+    <span>{{ particles }}</span>
+  </div>

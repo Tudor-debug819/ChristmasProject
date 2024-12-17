@@ -27,3 +27,22 @@
     animation-fill-mode: forwards;
   }
   
+  .controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  
+  .controls label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .controls input {
+    width: 200px;
+  }
