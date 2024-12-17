@@ -1,48 +1,48 @@
 @keyframes snowflake-fall {
-    0% {
-      transform: translateY(-100px) translateX(0px);
-      opacity: 1;
-    }
-    50% {
-      transform: translateY(50vh) translateX(75px);
-      opacity: 0.8;
-    }
-    100% {
-      transform: translateY(100vh) translateX(0px);
-      opacity: 0.8;
-    }
+  0% {
+    transform: translateY(-100px) translateX(0px);
+    opacity: 1;
   }
-  
-  .snowflake {
-    color: #fff;
-    font-size: 1.2em;
-    text-shadow: 0 0 2px #00bcd4;
-    position: fixed;
-    top: -10%; /* Start above the screen */
-    z-index: 999;
-    cursor: default;
-    animation-name: snowflake-fall;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
+  50% {
+    transform: translateY(50vh) translateX(75px);
+    opacity: 0.8;
   }
-  
-  .controls {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: white;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 8px;
-    z-index: 1000;
+  100% {
+    transform: translateY(100vh) translateX(0px);
+    opacity: 0.8;
   }
-  
-  .controls label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .controls input {
-    width: 200px;
-  }
+}
+
+.snowflake {
+  color: #fff;
+  font-size: 1.2em;
+  text-shadow: 0 0 2px #00bcd4;
+  position: fixed;
+  top: -10%;
+  z-index: 999;
+  cursor: default;
+  animation-name: snowflake-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+.controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.controls label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.controls input {
+  width: 200px;
+}

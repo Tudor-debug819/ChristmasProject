@@ -1,4 +1,4 @@
-import { Component, Renderer2, ElementRef,Input } from '@angular/core';
+import { Component, Renderer2, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-snowflakes',
@@ -10,7 +10,7 @@ export class SnowflakesComponent {
   @Input() particles: number = 35; // Default number of particles
   innerWidth = window.innerWidth;
 
-  constructor(private renderer: Renderer2, public el: ElementRef) {}
+  constructor(private renderer: Renderer2, public el: ElementRef) { }
 
   ngOnInit(): void {
     this.createParticles();

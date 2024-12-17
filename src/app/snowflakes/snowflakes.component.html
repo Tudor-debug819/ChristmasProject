@@ -1,15 +1,16 @@
 <audio autoplay loop>
-    <source src="background-music.mp3" type="audio/mpeg">
-  </audio>
+  <source src="background-music.mp3" type="audio/mpeg" />
+</audio>
 
 <div class="controls">
-    <label for="particleSlider">Select number of snowflakes: </label>
-    <input
-  id="particleSlider"
-  type="range"
-  min="10"
-  max="200"
-  [value]="particles"
-  (input)="onParticleChange($event)">
-    <span>{{ particles }}</span>
-  </div>
+  <label for="particleSlider">Select number of snowflakes: </label>
+  <input
+    id="particleSlider"
+    type="range"
+    min="10"
+    max="200"
+    [value]="particles"
+    (input)="onParticleChange($event)"
+  />
+  <span>{{ particles }}</span>
+</div>
