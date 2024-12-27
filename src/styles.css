@@ -1,4 +1,6 @@
 body {
-  background-image: url("assets/Background.jpg");
-  background-size: cover;
+  background-image: url("assets/poza-cu-noi.jpeg");
+  background-size: 70% auto; /* Scale width to 100%, height adjusts automatically */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center; /* Keep it centered */
 }

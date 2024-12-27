@@ -9,7 +9,7 @@ import { SnowflakesComponent } from "./snowflakes/snowflakes.component";
 })
 export class AppComponent {
   title = 'ChristmasProject';
-  particles: number = 35;
+  particles: number = 100;
 
   onParticleChange(event: Event) {
     this.particles = +(event.target as HTMLInputElement).value;
