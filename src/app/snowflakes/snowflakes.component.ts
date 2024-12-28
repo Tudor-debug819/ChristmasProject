@@ -7,7 +7,7 @@ import { Component, Renderer2, ElementRef, Input } from '@angular/core';
 })
 export class SnowflakesComponent {
   emoji = '❄';
-  @Input() particles: number = 35; // Default number of particles
+  @Input() particles: number = 200; // Default number of particles
   innerWidth = window.innerWidth;
 
   constructor(private renderer: Renderer2, public el: ElementRef) { }
