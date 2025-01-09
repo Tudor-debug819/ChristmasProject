@@ -1,15 +1,12 @@
 @keyframes snowflake-fall {
   0% {
     transform: translateY(-100px) translateX(0px);
-    opacity: 1;
   }
   50% {
     transform: translateY(50vh) translateX(75px);
-    opacity: 0.8;
   }
   100% {
     transform: translateY(100vh) translateX(0px);
-    opacity: 0.8;
   }
 }
 
@@ -35,7 +32,7 @@
   background: rgba(0, 0, 0, 0.6);
   padding: 10px;
   border-radius: 8px;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .controls label {
@@ -45,4 +42,10 @@
 
 .controls input {
   width: 200px;
+}
+
+button {
+  position: relative;
+  z-index: 20; /* Higher z-index than the slider */
+  margin-bottom: 10px; /* Add space between button and slider */
 }

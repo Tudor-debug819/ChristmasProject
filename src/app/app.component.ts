@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { SnowflakesComponent } from "./snowflakes/snowflakes.component";
 
 @Component({
@@ -11,7 +11,9 @@ export class AppComponent {
   title = 'ChristmasProject';
   particles: number = 35;
 
+
   onParticleChange(event: Event) {
     this.particles = +(event.target as HTMLInputElement).value;
   }
+
 }

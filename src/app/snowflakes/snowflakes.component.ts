@@ -1,4 +1,4 @@
-import { Component, Renderer2, ElementRef, Input } from '@angular/core';
+import { Component, Renderer2, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-snowflakes',
@@ -9,6 +9,12 @@ export class SnowflakesComponent {
   emoji = '❄';
   @Input() particles: number = 35; // Default number of particles
   innerWidth = window.innerWidth;
+
+  isMusicPlaying: boolean = false; // Start with music stopped
+
+  // Access the audio element using ViewChild
+  @ViewChild('backgroundMusic', { static: true }) backgroundMusic!: ElementRef<HTMLAudioElement>;
+
 
   constructor(private renderer: Renderer2, public el: ElementRef) { }
 
@@ -47,4 +53,15 @@ export class SnowflakesComponent {
   randomMinMax(min: number, max: number) {
     return Math.random() * (max - min) + min;
   }
+
+  toggleMusic() {
+    const audioElement = this.backgroundMusic.nativeElement;
+    if (this.isMusicPlaying) {
+      audioElement.pause(); // Pause the audio
+    } else {
+      audioElement.play(); // Play the audio
+    }
+    this.isMusicPlaying = !this.isMusicPlaying; // Toggle the state
+  }
+
 }

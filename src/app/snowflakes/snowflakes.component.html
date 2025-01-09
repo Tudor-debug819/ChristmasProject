@@ -1,6 +1,11 @@
-<audio autoplay loop>
+<audio #backgroundMusic>
   <source src="background-music.mp3" type="audio/mpeg" />
 </audio>
+
+<div class="controls">
+  <button (click)="toggleMusic()">{{ isMusicPlaying ? 'Stop Music' : 'Start Music' }}</button>
+
+<!-- de adaugat buton start/stop -->
 
 <div class="controls">
   <label for="particleSlider">Select number of snowflakes: </label>
